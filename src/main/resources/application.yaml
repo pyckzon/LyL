@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: Limpio & Liso System
+  datasource:
+    url: jdbc:postgresql://localhost:5432/lyl
+    username: postgres
+    password: postgres
+
+  jpa:
+    open-in-view: false
+
+    hibernate:
+      ddl-auto: validate
+
+    properties:
+      hibernate:
+        format_sql: true
+
+    show-sql: true
+
+  flyway:
+    enabled: true
